@@ -1,0 +1,29 @@
+What is an array?
+
+=> Array is basically a list of values.
+=> Any dataType for any element inside the array is acceptable. i.e., we can have an array which contains multiple values each having a different dataType.
+=> Syntax: 
+
+let arrayName = [val1, val2, val3, ...]
+
+Operations in arrays:
+
+1. Finding the length of the array: arrayName.length 
+2. Accessing the elements inside the array:
+    The elements inside the Array can be accessed using indexes where the firstElement starts with index 0.
+Ex:
+    Accessing firstElement = arr[0]
+    Accessing lastElement  = arr[arr.length-1]
+
+3. Adding elements to the array at the end:
+    arrayName.push(element) will push the element to the end of the Array.
+
+4. Adding elements to the beginning of the array:
+    arrayName.unshift(element) will push the element to the beginning  of the Array.
+
+5. Merge two arrays:
+    If we need to merge array1 and array2, we can do it using array1.concat(array2)
+
+Like this we have a lot more methods..
+
+console.log(typeof array1) => It is an Object....JS considers array as an Object.

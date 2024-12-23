@@ -1,0 +1,23 @@
+What are variables?
+
+- Variables are names that we use to store values.
+- In programming, we use some values very repeatedly in multiple locations. So instead of using the values every time, we store it in the memory and name it using a meaningful name which is called a variable.
+- Another use case of variable is, if the value we use repeatedly changes, we only need to change it at the variable declaration. So redundancy will be reduced.
+
+In Javascript to create a variable we have 3 keywords namely => let, var and const.
+
+var customer = "Janardhan";
+console.log(customer)
+
+The problem with using var keyword is, it creates a global variable. When we have a global variable it is available anywhere within the code. It can cause conflict when we declare another variable with same name in the project elsewhere.
+
+So to avoid the conflict we use let keyword.
+Avoid using var mostly..Only use it when we need to declare the variable globally.
+
+const keyword:
+    It has the same scope of let. But if we use const we cannot reassign the value/ change the value.
+    Ex: const balance = 40; balance = balance + 60; This will throw an error
+
+=> If we want to assign a variable to global scope => var keyword
+=> variable in a function scope and able to reassign => let keyword 
+=> variable in a function scope and it is fixed and no reassign => use const..

@@ -1,0 +1,15 @@
+Boolean DataType:
+
+=> Boolean DataType is only composed of 2 values: true or false 
+=> They are written in lowerCase
+
+UseCaseS:
+
+- Comparing and making decisions
+Ex: console.log(3>5) => It returns the value false...
+
+Ex2:
+
+let num1 = 8
+let num2 = 8
+console.log(num1===num2) => Ans: true 

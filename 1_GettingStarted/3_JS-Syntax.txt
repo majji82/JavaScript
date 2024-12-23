@@ -1,0 +1,34 @@
+Syntax:
+
+Why do alert have parenthesis?
+=>  alert('alert message') have parenthesis because alert is a function call. The functions in JS are blocks of code which we can create and give the function a name so that we can execute them later in our project..
+    JS have some built-in functions like the alert function. We can also create our own functions.
+
+=> Function names must be unique..  i.e., if a name is once used it cannot be used multiple times in the same project 
+=> And also functionNames must not be reserved keyWords/ inbuilt function Names.
+
+Curly braces in JS:
+
+{}
+The curly braces in the Javascript function is a block of code which is executed every time we invoke that function/ call the function.
+
+Syntax of JS function:
+
+function in JS generally have a function keyword followed by the name of the function along with (parenthesis). The arguments if any are passed in the parenthesis.
+    Then we have curly braces where we place the code which has to be executed when the function is invoked.
+
+To invoke any function we use functionName(); 
+We can execute the function anywhere in the code by invoking the function wherever we need.
+
+What are parameters in functions?
+
+    Parameters are values which we pass it to the function to make it dynamic. Static ones are which shows the same output every time we invoke them. 
+        Dynamic ones are which change according to the supplied parameters.
+
+Another inbuilt function:
+
+We have an object named console which has an inbuilt-function named log. Anything which is taken by the log as parameter will be displayed in the browser's console.
+
+Ex: console.log("Hello world");
+
+The console.log is not for the users, it is for the developers to see what is going on in the code..

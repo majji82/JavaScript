@@ -1,0 +1,22 @@
+DataTypes:
+
+- EveryTime we assign a value to a variable it has a dataType.
+
+Why do we need DataType?
+
+- Operators are gonna behave differently on different variables based on their dataType.
+Ex: 
+
+let num1 = 12
+let num2 = 16 
+num1 + num2 = 28 (Here DataTypes of both variables are numbers)
+
+let num1 = "12"
+let num2 = "16"
+num1 + num2 = "1216" (DataTypes of both are strings)
+
+The "+" sign does addition if we supply number DataType and Concatenation if we supply String DataType..
+So we have to know the dataTypes so that we don't run into unexpected results.
+
+Note: JS is a weakly-typed language...
+which means that we don't have to specifically tell the dataType while assigning and also we can re-assign the variable to a different dataType.

@@ -1,0 +1,15 @@
+We can also manipulate/change the CSS by using JavaScript.
+
+Ex: We can use the same querySelector but instead of innerHTML we can select style.
+document.querySelector("p#weather").style.color = "red";
+
+Note: 
+    A point to be remembered is that some of the CSS properties may contain hyphen "-". Ex: background-color, max-width etc., They cannot be directly selected. Instead we remove the hyphen and Capitalize the next letter.
+
+    Ex: background-color is written as backgroundColor
+
+Adding and Removing Classes:
+
+    To add and remove classes to selected elements we have in-built methods like classList.add, classList.remove and classList.toggle [If we choose toggle, if we have the class it will remove and if we donot have it will add]
+
+    

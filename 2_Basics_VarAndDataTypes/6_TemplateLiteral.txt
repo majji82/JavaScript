@@ -1,0 +1,6 @@
+=> While using a variable in a string we can concatenate then to get the value.
+=> But it would be clumsy if we have multiple variables to be used in a single statement.
+=> So we have template literals where we don't have to use + symbol every time.
+=> Instead wrap the complete string in `` (backticks/ tilde) and write the variable like => ${variableName}
+
+Ex: console.log(`The temperature is ${temperature}`)

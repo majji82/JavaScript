@@ -1,0 +1,24 @@
+Null and Undefined:
+
+Undefined:
+
+=> Whenever we declare a variable without assigning the value for ex: let customer; In this case we are creating memory for the variable customer without storing anything in the memory. In such case if we try to access such variables it will give undefined and the dataType will also be undefined.
+
+Note:
+
+let customer = {
+    name: "Janardhan"
+}
+
+console.log(customer.age) => gives undefined because the syntax customer.age will automatically creates a memory and we are trying to access it which gives us undefined..
+
+Null dataType:
+
+Null is almost similar to undefined but we can to specifically define null to a variable. Mostly we use null to a variable in such cases where we need to erase the data stored in that variable..
+
+Note:
+
+1. null ==  undefined (true)
+2. null === undefined (false)
+3. typeOf undefined = undefined
+4. typeOf null      = object

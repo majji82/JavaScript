@@ -1,0 +1,14 @@
+What does the project contains?
+
+- Side menu with click events.
+- Greeting Section (with conditions => time)
+- User Location
+- Get the weather information
+- Button => Celsius to fahrenheit conversion 
+- Working clock 
+- Image Gallery [Array]
+- Array of products are there..Filter the products based on free/paid
+
+How does we run JS in the browser?
+
+- Every browser has in-built JS engine. EX: Chrome has v8 Javascript engine.

@@ -1,0 +1,28 @@
+Syntax:
+
+let student = {
+    studentName : "Janardhan",
+    studentAge: 21,
+    collegeName: "KLU"
+};
+
+Object is a set of key-value pairs for a particular Variable..
+
+1) Accessing the values for the object:
+
+In Objects we don't access the values using the index. Instead we access them using the keys..
+
+1. Using the Dot Notation: 
+    console.log(student.studentAge)
+    console.log(student.collegeName)
+2. Using the bracket Notation:
+    console.log(student["collegeName"])
+
+The key-value pairs in the object are called Properties. To access these we can use dot notation or braces notation..
+
+2) Adding new property to object:
+    student.id = "2100032153"
+
+3) Change an existing property is similar to adding a new property. If there is no property it will be added else the value will be modified.
+
+=> We can also have an array of Objects (Ex: students array with objects of students)

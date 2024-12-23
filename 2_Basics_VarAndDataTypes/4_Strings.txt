@@ -1,0 +1,28 @@
+Note: 
+    Use the numbers only if it is required to do the calculation with numbers. For example there is an accountNumber. Even though "accountNumber" is a numeric, we don't do any calculations with it. So, we declare it as a String....
+
+What is a String:
+
+=> String is a sequence of multiple characters.
+=> Length of string can be found by accountNumber.length [This gives length of string i.e., no of characters present in the string]...This can be useful in various situations like validating the no of characters in the account Number...
+=> In the string each character have their specific position and is represented by the Index. The Index of the characters start from "0"..
+
+Accessing the characters in string:
+
+=> If the position of the character (index) is known in a string then we can directly access that character.
+Ex: let accountNumber = "I456545"
+
+=> If we want the first character, use accountNumber[0], last character => accountNumber[accountNumber.length-1]
+
+Accessing contiguous characters from String:
+
+=> We can access contiguous characters from string using "slice" method.
+=> The slice method has two arguments the start and the end index, where it prints the characters from start index (including) and the end index (excluding)
+
+Ex: accountNumber.slice(0,2)
+
+Replacing parts of the string:
+
+=> we also have a method called replace which can take two arguments, where 1st argument is a string which must be replaced by the second argument.
+
+Note: Just using accountNumber.replace("_", "-") will not replace the - in the original string. To replace in the original string we must re-assign it to the string..i.e, accountNumber = accountNumber.replace("_", "");

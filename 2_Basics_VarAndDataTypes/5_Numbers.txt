@@ -1,0 +1,28 @@
+Number DataType:
+
+=> Some programming languages distinguish between integers and floating point numbers and will assign dataTypes like double, float etc..
+    In JavaScript everything is a number including decimal point numbers.
+=> With Number DataTypes we can do operations like addition, subtraction, multiplication, etc..
+
+let price = 17.69
+console.log(typeof(price))
+
+Ans: number
+
+Note: If we are doing bigger operations, then watch carefully for the BODMAS rule.
+
+=> We can also find exponents by using ** 
+Ex: 2**4 is 2 power 4 which equals 16 
+
+Math object:
+
+=> There is an  object in JavaScript known as Math..which has many inbuilt methods that we can use with numbers.
+Ex: Math.round(), Math.floor(), Math.ceil() => for rounding the numbers..
+
+Note: If we want to round a number to a fixed number of decimal places then, use toFixed method.
+price.toFixed(2) will round the number until 2 decimal places.
+
+Conversion of DataTypes:
+
+To convert a string to a number we can use the method parseFloat(str) or parseInt(str)
+To convert a number to string we use num.toString()

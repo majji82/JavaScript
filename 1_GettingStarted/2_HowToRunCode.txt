@@ -1,0 +1,22 @@
+Writing JS code in browser and outside the browser:
+
+- Almost all the browsers have Inbuilt JS engine which can read and execute JS Code
+- We can write JS code in the browser in the console tab available in Dev tools 
+- JS is a case-sensitive language...
+- If we have any errors in our JS file they can be viewed in the console (browser)..
+
+=> The code which we write in the console of browser (DevTools) must be for sample purposes
+Actual JS code can be written outside the browser in any codeEditor..
+=> In code editor JS code can be written in:
+
+1. Inside the HTML file 
+2. External file 
+
+1. Inside the HTML file:
+    We can write JS inside the HTML file by using the script tag. The recommended place for using script tag is at the end of the body tag..Because sometimes JS may take time to load. So we write it at the end so that HTML and CSS will load in the mean time...But writing like this will mix up HTML and JS and makes the code looks clumsy.
+2. External file:
+    To avoid clumsiness we create a separate JS file and link it with HTML file using the same script tag. We can use the attribute named src along with script tag to link HTML with external JS file..
+    <script src="main.js"></script> 
+
+
+Note: In JS semicolon is not mandatory

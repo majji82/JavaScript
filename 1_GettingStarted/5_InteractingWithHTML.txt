@@ -1,0 +1,19 @@
+We know about DOM and we can interact with the HTML elements by using DOM..
+
+For ex:
+ <h1 id="greeting">Good Morning!</h1>
+
+We have this element and we know that ID's are unique in HTML..So we can select the content in this id by using:
+    document.getElementById("greeting").innerHTML
+We can change the content inside by using 
+    document.getElementById("greeting").innerHTML = "Hello World"
+
+More select methods:
+
+=> getElementById 
+=> getElementsByClassName
+=> getElementsByTagName etc.,
+
+If we know the exact CSS selector to be selected then we can also use querySelector method.
+document.querySelector("CSS-selector")
+Ex: document.querySelector("p#weather")

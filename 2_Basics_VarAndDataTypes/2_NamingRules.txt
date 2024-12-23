@@ -1,0 +1,13 @@
+Naming Rules and best practices:
+
+Rules:
+
+=> Variable names may contain letters, digits, underscores (_) and dollar signs ($)
+=> Names must begin with a letter, underscore or a dollar sign but "not with a number".
+=> Names are case-sensitive (customer is different from Customer)
+=> Reserved words (like let, const, function, if) cannot be used as variable names.
+
+=> The most widely used pattern in JS is camelCase. Ex: customerName instead of customer_name
+first word starts with lowerCase next words start with upperCase
+=> variableNames must be meaningful. When we look at the code the intention of creating a variable must be easily understood.
+=> Try to keep the variable name as short as possible.

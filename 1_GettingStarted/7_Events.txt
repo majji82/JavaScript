@@ -1,0 +1,7 @@
+What is an event?
+
+    An event is a specific action that occurs within a webpage/application as per the user's instruction as input and gives the output.
+    Ex:  Clicking an element, Moving the mouse, Loading the page etc..
+
+These events can be triggered by using addEventListener 
+For ex: We need an alert box while clicking the p#weather
