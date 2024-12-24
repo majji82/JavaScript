@@ -1,0 +1,33 @@
+Loops:
+
+=> Loops are structures of repetition..used when we need to repeat same block of code over and over again multiple times.
+
+Syntax:
+
+for(initialization; condition; increment/decrement){
+    // code 
+}
+
+Here if the condition is true, the code in the loop executes..If it is false, it comes out of the loop..
+
+for(let i=0; i<=10; i++){
+    console.log(i);
+}
+
+UseCases:
+Iterate through an array
+
+For in loop:
+
+Syntax:
+
+for(let index in arrayName){
+    console.log(arrayName[index])
+}
+
+for(let index in animals){
+    console.log(animals[index]);
+}
+
+The for in loop is specifically used for array elements and objects. We don't have to worry about length of array or the no of properties in an object..
+    If we loop through an array, the index will be the arrayIndexes, if it is through object then the indexes will be the properties.

@@ -1,0 +1,12 @@
+Conditional Statements:
+    These are the statements which are used to make decisions.
+
+if(condition-1){
+    statement-1
+}else if(condition-2){
+    statement-2
+}else{
+    statement-3
+}
+
+if condition1 is true then statement-1 is executed. OtherWise if condition-2 is true then statement-2 is executed..If nothing works then the statement-3 (which is under else will be executed)

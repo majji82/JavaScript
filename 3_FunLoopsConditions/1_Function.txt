@@ -1,0 +1,29 @@
+What is a Function?
+
+=> A Function is a block of code which executes whenever we invoke it..
+=> Whenever we have aa few lines of code which we know we are gonna repeat multiple times in our code then it is worth wrapping it in a function..
+=> Functions also keep code isolated and make the code more readable..
+
+Syntax:
+
+function fnName(parameters){
+    //code
+}
+
+Ex: 
+
+function celsiusToFahrenheit(celsius){
+    return (celsius* 9/5)+32;
+}
+
+function fahrenheitToCelsius(fahrenheit){
+    return (fahrenheit-32)*5/9;
+}
+
+Executing a function:
+    A function will be executed only if it is invoked..We can invoke the function multiple times whenever we need to execute the code..
+
+Why do we need arguments?
+    We need arguments to make the function dynamic..Give different outputs for different arguments.. If we don't give arguments it gives the same output every time we invoke a function.  
+
+After completing the logic inside the function we can either print the output or else we can return the value so that the value can be used elsewhere.
