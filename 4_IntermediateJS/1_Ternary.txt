@@ -1,0 +1,8 @@
+Ternary Operator:
+
+- Ternary Operator is a short form of if-else
+
+Syntax:
+    condition ? statement if true : statement if false
+
+Ex: thumb.dataset.selected = index === 0 ? true : false
