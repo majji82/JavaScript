@@ -1,0 +1,9 @@
+HTTP is a protocol for transferring files over www.
+Every website basically we use gets data using HTTP protocol.
+
+HTTP request and response:
+
+=> The client sends HTTP request using the web browser..
+=> The browser sends the request to the server.
+=> The server looks for any data needed from the database and sends back as response.
+=> The browser receives the response...

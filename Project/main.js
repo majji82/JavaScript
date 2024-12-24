@@ -1,3 +1,6 @@
+const weatherAPIKey = "bd5e378503939ddaee76f12ad7a97608"
+const weatherAPIURL = `https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}&units=metric`
+
 const galleryImages = [
     {
         src: "./assets/gallery/image1.jpg",
@@ -79,27 +82,40 @@ function greetingHandler(){
     else{
         greetingText = "Welcome Batman"
     }
-    
-    const weatherCondition = "rainy"
-    const userLocation = "Hyderabad"
-    let temperature = 30
-    let celsiusText = `The weather is ${weatherCondition} in ${userLocation} and it's ${temperature.toFixed(1)}°C outside.`
-    let fahrText = `The weather is ${weatherCondition} in ${userLocation} and it's ${celsiusToFahrenheit(temperature).toFixed(1)}°F outside.`
-    
     document.querySelector("h1#greeting").innerHTML = greetingText
-    document.querySelector('p#weather').innerHTML = celsiusText
+}
+
+// Weather Handler
+
+function weatherHandler(){
+    navigator.geolocation.getCurrentPosition((position) => {
+        let latitude = position.coords.latitude
+        let longitude = position.coords.longitude
+        let url = weatherAPIURL.replace("{lat}", latitude).replace("{lon}", longitude).replace("{API key}", weatherAPIKey);
+         fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            const condition = (data.weather[0].description)
+            const location = data.name
+            const temperature = data.main.temp 
     
-    // Temperature switch
+            let celsiusText = `The weather is ${condition} in ${location} and it's ${temperature.toFixed(1)}°C outside.`
+            let fahrText = `The weather is ${condition} in ${location} and it's ${celsiusToFahrenheit(temperature).toFixed(1)}°F outside.`
+            
+            document.querySelector('p#weather').innerHTML = celsiusText
     
-    document.querySelector(".weather-group").addEventListener("click", function(event){
-        console.log(event.target.id)
-        if (event.target.id == "fahr"){
-             document.querySelector('p#weather').innerHTML = fahrText
-        }else if(event.target.id == "celsius"){
-             document.querySelector('p#weather').innerHTML =  celsiusText
-        }
+            document.querySelector(".weather-group").addEventListener("click", function(event){
+                if (event.target.id == "fahr"){
+                     document.querySelector('p#weather').innerHTML = fahrText
+                }else if(event.target.id == "celsius"){
+                     document.querySelector('p#weather').innerHTML =  celsiusText
+                }
+            });
+    
+        });
     });
 }
+
 
 // Temperature Conversion
 
@@ -234,6 +250,8 @@ function footerHandler(){
     document.querySelector("footer").textContent = `@ ${new Date().getFullYear()} All rights reserved`
 }
 
+
+
 // Page Load
 
 menuHandler()
@@ -242,3 +260,4 @@ clockHandler()
 galleryHandler()
 productsHandler()
 footerHandler()
+weatherHandler()

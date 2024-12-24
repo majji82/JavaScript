@@ -1,3 +1,6 @@
+const weatherAPIKey = "bd5e378503939ddaee76f12ad7a97608"
+const weatherAPIURL = `https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}`
+
 // Menu Section
 
 document.querySelector("#open-nav-menu").addEventListener("click", function(){
@@ -291,6 +294,19 @@ function productsHandler(){
         else if(e.target.id ==="paid") populateProducts(paidProducts);
     })
 }
+
+function footerHandler(){
+    document.querySelector("footer").textContent = `@ ${new Date().getFullYear()} All rights reserved`
+}
+
+navigator.geolocation.getCurrentPosition((position) => {
+    let latitude = position.coords.latitude
+    let longitude = position.coords.longitude
+    let url = weatherAPIURL.replace("{lat}", latitude).replace("{lon}", longitude).replace("{API key}", weatherAPIKey);
+     fetch(url)
+    .then(response => response.json())
+    .then(data => console.log(data));
+});
 
 productsHandler()
 
